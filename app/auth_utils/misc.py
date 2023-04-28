@@ -1,12 +1,10 @@
 import contextlib
-
+from auth_utils.managers import get_user_manager
 from models.auth_models import get_async_session, get_user_db
+
 from schemas.auth_schemas import UserCreate
-from managers import get_user_manager
 from fastapi_users.exceptions import UserAlreadyExists
-
 import asyncio
-
 
 get_async_session_context = contextlib.asynccontextmanager(get_async_session)
 get_user_db_context = contextlib.asynccontextmanager(get_user_db)

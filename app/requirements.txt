@@ -1,3 +1,4 @@
+asyncpg
 anyio==3.6.2
 bcrypt==4.0.1
 cffi==1.15.1
